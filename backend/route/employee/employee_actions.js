@@ -126,12 +126,4 @@ router.delete('/delete_employees/:eid', async (req, res) => {
     }
 });
 
-
-// Log the routes being defined in this file
-router.stack.forEach((layer) => {
-    if (layer.route) {
-        console.log(`Defining route: ${Object.keys(layer.route.methods)[0].toUpperCase()} ${layer.route.path}`);
-    }
-});
-
 module.exports = router;

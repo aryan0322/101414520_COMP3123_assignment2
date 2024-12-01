@@ -13,8 +13,8 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Expose the port the backend server uses
-EXPOSE 1111
+# Expose the port React uses
+EXPOSE 3000
 
-# Start the backend server
+# Start the React development server
 CMD ["npm", "start"]
